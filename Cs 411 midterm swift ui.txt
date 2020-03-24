@@ -16,28 +16,10 @@ Struct ContentView: View{
 }
 }
                 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 2)
 Struct ContentView: View{
         var body: some View{
-                Button(“Hello, world!”)
+                Button(“Live long and prosper”)
                 .frame(width: 200, height: 200)
                 .background(Color.red)
 }
@@ -58,6 +40,7 @@ Section{Text(“Hello, world!”);}
 }
 }
 }
+
 4)
 Struct ContentView: View{
         @State private var showingAlert = false
