@@ -1,0 +1,74 @@
+﻿Anthony Cardenas
+Cs 411 Midterm SwiftUI
+
+
+1)
+Struct ContentView: View{
+        var body: some View{
+                Text(“Hi!”)
+                .padding()
+                .background(Color.red)
+.padding()
+                .background(Color.blue)
+.padding()
+.padding()
+                .background(Color.green)
+}
+}
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2)
+Struct ContentView: View{
+        var body: some View{
+                Button(“Hello, world!”)
+                .frame(width: 200, height: 200)
+                .background(Color.red)
+}
+}
+
+
+3)
+Struct ContentView: View{
+        var body: some View{
+                NavigationBar{
+                        Form{
+                                Section{
+                                        Text(“Hello, world!”);
+                                        Text(“Hello, world!”)
+}
+Section{Text(“Hello, world!”);}
+}.navigationBarTitle(“SwiftUI”)
+}
+}
+}
+4)
+Struct ContentView: View{
+        @State private var showingAlert = false
+        var body: some View{
+                Button(“Show Alert: ”){
+                        self.tapCount+=1
+                        self.showingAlert = true
+                }
+                .alert(isPresented: $showingAlert){
+                        Alert(title: Text(“Tapcount”), message: Text(“\self.tapCount”)),
+                                dismissButton: .default(Text(”OK”))
+}
+}
+}
